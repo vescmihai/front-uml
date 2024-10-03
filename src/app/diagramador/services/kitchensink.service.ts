@@ -1277,7 +1277,7 @@ public interface ${nombreClase}Repositorio extends JpaRepository<${nombreClase},
   ): [string, ElementoClase[]] {
     let respuesta: string = '';
     const cardinalidad: string =
-      posicion === 'origen' ? link.atributos[0] : link.atributos[1];
+      posicion === 'origen' ? link.atributos[1] : link.atributos[0];
 
     if (link.atributos[0] == '1...1' && link.atributos[1] == '1...1') {
       if (bansClassOneToOne.includes(elementoClase1)) {
